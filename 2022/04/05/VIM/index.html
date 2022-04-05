@@ -20,15 +20,21 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="蛰龙">
-<meta property="og:url" content="http://example.com/archives/2022/index.html">
+  <meta name="description" content="模式 正常模式：可以使用快捷键命令，或按：输入命令行 插入模式：可以输入文本，在正常模式下，按i，a，o都可以进入插入模式 可视模式：正常模式下按v进入可视模式，在可视模式下，移动光标可以选择文本。按V进入可视行模式，总是整行整行的选中。ctrl+v进入可视块模式。 替换模式：正常模式下，按R进入  neovim安装brew install neovim 插件管理（基于vim-plug） vim-">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VIM">
+<meta property="og:url" content="http://example.com/2022/04/05/VIM/index.html">
 <meta property="og:site_name" content="蛰龙">
+<meta property="og:description" content="模式 正常模式：可以使用快捷键命令，或按：输入命令行 插入模式：可以输入文本，在正常模式下，按i，a，o都可以进入插入模式 可视模式：正常模式下按v进入可视模式，在可视模式下，移动光标可以选择文本。按V进入可视行模式，总是整行整行的选中。ctrl+v进入可视块模式。 替换模式：正常模式下，按R进入  neovim安装brew install neovim 插件管理（基于vim-plug） vim-">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/VIM/vim-plug.png">
+<meta property="article:published_time" content="2022-04-05T03:11:16.000Z">
+<meta property="article:modified_time" content="2022-04-05T03:14:55.121Z">
 <meta property="article:author" content="zone-zl">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/VIM/vim-plug.png">
 
-<link rel="canonical" href="http://example.com/archives/2022/">
+<link rel="canonical" href="http://example.com/2022/04/05/VIM/">
 
 
 <script id="page-configurations">
@@ -36,12 +42,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Archive | 蛰龙</title>
+  <title>VIM | 蛰龙</title>
   
 
 
@@ -149,70 +155,136 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 2 posts in total. Keep on posting.</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/05/VIM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zone-zl">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="蛰龙">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          VIM
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-04-05 11:11:16 / Modified: 11:14:55" itemprop="dateCreated datePublished" datetime="2022-04-05T11:11:16+08:00">2022-04-05</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <h1 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h1><ul>
+<li>正常模式：可以使用快捷键命令，或按：输入命令行</li>
+<li>插入模式：可以输入文本，在正常模式下，按i，a，o都可以进入插入模式</li>
+<li>可视模式：正常模式下按v进入可视模式，在可视模式下，移动光标可以选择文本。按V进入可视行模式，总是整行整行的选中。ctrl+v进入可视块模式。</li>
+<li>替换模式：正常模式下，按R进入</li>
+</ul>
+<h1 id="neovim"><a href="#neovim" class="headerlink" title="neovim"></a>neovim</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>brew install neovim</p>
+<h2 id="插件管理（基于vim-plug）"><a href="#插件管理（基于vim-plug）" class="headerlink" title="插件管理（基于vim-plug）"></a>插件管理（基于vim-plug）</h2><ol>
+<li>vim-plug 插件安装</li>
+</ol>
+<p>下载<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim">plug.vim</a> 文件，将plug.vim文件放在<code>～/.vim/autoload</code> 目录下</p>
+<p>nvim使用，可以采用将<code>.vim</code>文件夹软连接到<code>.config/nvim</code>,</p>
+<p><code>ls -s ~/.vim ~/.config/nvim</code></p>
+<ol>
+<li><p>配置文件</p>
+<ul>
+<li>vim 的配置文件一般是<code>～/vimrc</code></li>
+<li>neovim 的配置文件是<code>～/.config/nvim/init.vim</code></li>
+</ul>
+</li>
+<li><p>配置文件的编写</p>
+<p> 在配置文件中，添加如下内容：</p>
+ <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">call plug<span class="meta">#begin(PLUGIN_DIRECTORY)</span></span><br><span class="line">...</span><br><span class="line">（插件内容）</span><br><span class="line">call plug<span class="meta">#end()</span></span><br></pre></td></tr></table></figure>
+<p> 其中PLUGIN_DIRECTORY为插件存在目录，可以放在<code>~/.vim/plugged</code>目录下</p>
+<p> 可以在<a target="_blank" rel="noopener" href="https://vimawesome.com/">vimawesome</a>获取需要安装的插件，其中有对应的配置如：</p>
+<p> <img src="/VIM/vim-plug.png" alt="vim-plug.png"></p>
+</li>
+<li><p>插件管理</p>
+<p> 在vim中可以使用如下命令实现插件安装、卸载等</p>
+<table>
+<thead>
+<tr>
+<th>PlugStatus</th>
+<th>查看插件状态</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PlugInstall</td>
+<td>安装插件</td>
+</tr>
+<tr>
+<td>PlugUpdate</td>
+<td>插件更新，更新插件后，按下d查看更改，或者可以输入PlugDiff</td>
+</tr>
+<tr>
+<td>PlugClean</td>
+<td>删除插件时，可以注释掉插件配置文件的对应插件</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p> PlugStatus   → 查看插件状态</p>
+<p> PlugInstall    → 安装插件</p>
+<p> PlugUpdate  → 插件更新，更新插件后，按下d查看更改，或者可以输入:PlugDiff </p>
+<p> PlugClean     → 删除插件时，可以注释掉插件配置文件的对应插件，然后 </p>
+<p> PlugUpgrade → 升级vim-plug本身</p>
+</li>
+</ol>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-04-05T11:11:16+08:00"
-              content="2022-04-05">
-          04-05
-        </time>
-      </div>
+      <footer class="post-footer">
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/04/05/VIM/" itemprop="url">
-            <span itemprop="name">VIM</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-19T13:41:40+08:00"
-              content="2022-03-19">
-          03-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/19/hello-world/" itemprop="url">
-            <span itemprop="name">Introduction</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
+        
 
 
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/03/19/hello-world/" rel="prev" title="Introduction">
+      <i class="fa fa-chevron-left"></i> Introduction
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-  </div>
+      </footer>
+    
+  </article>
   
   
-  
-
   
 
 
@@ -265,6 +337,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A8%A1%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#neovim"><span class="nav-number">2.</span> <span class="nav-text">neovim</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%92%E4%BB%B6%E7%AE%A1%E7%90%86%EF%BC%88%E5%9F%BA%E4%BA%8Evim-plug%EF%BC%89"><span class="nav-number">2.2.</span> <span class="nav-text">插件管理（基于vim-plug）</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
